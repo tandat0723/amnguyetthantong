@@ -1,5 +1,4 @@
-import React, {useState, useEffect, useMemo, useCallback} from 'react'
-import NavigationBar from '../../components/NavBar/NavigationBar'
+import React, { useState, useEffect, useMemo, useCallback } from 'react'
 import Post from '../../components/ShortPost/ShortPost'
 import db from '../../utils/db.json'
 function MostLikedPost() {

@@ -1,8 +1,5 @@
 import React, {useState, useEffect, useCallback} from 'react'
 import './profile.css'
-
-import Footer from '../../components/Footer/Footer'
-import NavigationBar from '../../components/NavBar/NavigationBar'
 import db from '../../utils/db.json'
 import AuthorCard from '../../components/AuthorCard/AuthorCard'
 import FilterHeader from '../../components/FilterHeader/FilterHeader'
