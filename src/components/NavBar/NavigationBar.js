@@ -11,8 +11,6 @@ import { Link } from 'react-router-dom'
 
 function NavigationBar() {
   const pathName = window.location.pathname
-  // const [isOpen, setIsOpen] = useState(false)
-  // const toggle = useCallback(() => setIsOpen(!isOpen), [isOpen])
 
   return (
     <div className="navBar1">
@@ -23,19 +21,26 @@ function NavigationBar() {
           </Link>
         </NavItem>
         <NavbarToggler style={{ width: 'w-100' }} />
-        <Collapse className="" navbar style={{ color: 'white', width: 'w-100', height: 'h-12', }}>
+        <Collapse navbar style={{ color: 'white', width: 'w-100', height: 'h-12' }}>
           <Nav className="mx-auto" navbar>
-            <NavItem>
+            <NavItem className="navItem">
               <Link to="/" >
                 <p className={`m-2 ${pathName === '/' ? 'text-white' : 'text-secondary'}`}>
-                  Trang Chủ
+                  Vấn Đáp
                 </p>
               </Link>
             </NavItem>
-            <NavItem>
-              <Link to="/MostLikedPost">
-                <p className={`m-2 ${pathName === '/MostLikedPost' ? 'text-white' : 'text-secondary'}`} >
+            <NavItem className="navItem">
+              <Link to="/Blog">
+                <p className={`m-2 ${pathName === '/blog' ? 'text-white' : 'text-secondary'}`} >
                   Blog
+                </p>
+              </Link>
+            </NavItem>
+            <NavItem className="navItem">
+              <Link to="/Profile">
+                <p className={`m-2 ${pathName === '/profile' ? 'text-white' : 'text-secondary'}`} >
+                  Về chúng tôi
                 </p>
               </Link>
             </NavItem>

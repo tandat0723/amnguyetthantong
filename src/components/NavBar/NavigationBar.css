@@ -1,7 +1,14 @@
-.navBar1{
-    /* background-color: black; */
-    /* color: white; */
+.navBar1 {
     font-weight: bold;
     display: block;
-    padding-bottom: 100px;
+    padding-bottom: 3rem;
+}
+
+.navItem {
+    margin-right: .5rem;
+
+}
+
+.navItem>Link>p {
+    color: white;
 }
